@@ -52,7 +52,7 @@
 <body class="antialiased selection:bg-mcs-gold selection:text-mcs-black font-sans">
 
     <!-- Header (Solid Black for interior pages) -->
-    <header class="w-full z-50 bg-mcs-black py-4 shadow-md" id="navbar">
+    <header class="fixed w-full z-[60] bg-mcs-black pt-6 pb-4 md:py-4 shadow-md" id="navbar">
         <div class="max-w-7xl mx-auto px-6 grid-12 items-center">
             <div class="col-span-6 md:col-span-3">
                 <a href="index.html">
@@ -84,16 +84,16 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobileMenu"
-        class="fixed inset-0 bg-mcs-black z-50 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300">
-        <nav class="flex flex-col items-center space-y-8 text-center">
+        class="fixed inset-0 bg-mcs-black z-50 hidden flex-col justify-start opacity-0 transition-opacity duration-300 pt-32 px-8 pb-8 overflow-y-auto">
+        <nav class="flex flex-col w-full space-y-6">
             <a href="portfolio.html"
-                class="font-heading font-black text-mcs-gold text-4xl uppercase tracking-widest hover:text-white transition-colors">Work</a>
+                class="font-heading font-black text-white text-3xl tracking-widest uppercase border-b border-gray-800 pb-4 hover:text-mcs-gold transition-colors block">Work</a>
             <a href="about.html"
-                class="font-heading font-black text-mcs-gold text-4xl uppercase tracking-widest hover:text-white transition-colors">About</a>
+                class="font-heading font-black text-white text-3xl tracking-widest uppercase border-b border-gray-800 pb-4 hover:text-mcs-gold transition-colors block">About</a>
             <a href="safety.html"
-                class="font-heading font-black text-mcs-gold text-4xl uppercase tracking-widest hover:text-white transition-colors">Safety</a>
+                class="font-heading font-black text-white text-3xl tracking-widest uppercase border-b border-gray-800 pb-4 hover:text-mcs-gold transition-colors block">Safety</a>
             <a href="tel:8888400931"
-                class="font-heading font-black text-mcs-gold text-3xl tracking-widest mt-8 hover:text-white transition-colors">(888)
+                class="font-heading font-black text-mcs-gold text-2xl tracking-widest pt-4 hover:text-white transition-colors block">(888)
                 840-0931</a>
         </nav>
     </div>
