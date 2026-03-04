@@ -1,0 +1,6 @@
+[build]
+  # Tell Netlify that the published files are right here in the root folder
+  publish = "/"
+  
+  # Tell Netlify not to run any complex build commands
+  command = ""
