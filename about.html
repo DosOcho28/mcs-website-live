@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | McCole Construction Services</title>
+    <meta name="description"
+        content="Discover the foundation of excellence at McCole Construction Services: A legacy of field expertise powered by modern innovation.">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Condensed:wght@700;900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mcs-gold': '#FFB81C',
+                        'mcs-black': '#0a0a0a',
+                        'mcs-gray': '#1a1a1a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Roboto Condensed', 'sans-serif'],
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #0a0a0a;
+        }
+
+        /* 12 column grid utility */
+        .grid-12 {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-mcs-gold selection:text-mcs-black font-sans">
+
+    <!-- Header (Solid Black for interior pages) -->
+    <header class="w-full z-50 bg-mcs-black py-4 shadow-md" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 grid-12 items-center">
+            <div class="col-span-6 md:col-span-3">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="MCS Logo" class="h-12 w-auto invert" id="logo-img">
+                </a>
+            </div>
+            <div class="col-span-6 md:col-span-9 flex justify-end items-center gap-6 md:gap-8">
+                <a href="portfolio.html"
+                    class="font-heading font-black text-white hover:text-mcs-gold transition-colors tracking-widest uppercase md:block hidden">Work</a>
+                <a href="about.html"
+                    class="font-heading font-black text-white hover:text-mcs-gold transition-colors tracking-widest uppercase md:block hidden">About</a>
+                <a href="safety.html"
+                    class="font-heading font-black text-white hover:text-mcs-gold transition-colors tracking-widest uppercase md:block hidden">Safety</a>
+                <a href="tel:8888400931"
+                    class="font-heading font-black text-white tracking-widest text-xl hover:text-mcs-gold transition-colors md:block hidden"
+                    id="nav-phone">(888) 840-0931</a>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobileMenuBtn"
+                    class="md:hidden text-white focus:outline-none z-[60] relative transition-colors">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="hamburgerIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu"
+        class="fixed inset-0 bg-mcs-black z-50 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300">
+        <nav class="flex flex-col items-center space-y-8 text-center">
+            <a href="portfolio.html"
+                class="font-heading font-black text-mcs-gold text-4xl uppercase tracking-widest hover:text-white transition-colors">Work</a>
+            <a href="about.html"
+                class="font-heading font-black text-mcs-gold text-4xl uppercase tracking-widest hover:text-white transition-colors">About</a>
+            <a href="safety.html"
+                class="font-heading font-black text-mcs-gold text-4xl uppercase tracking-widest hover:text-white transition-colors">Safety</a>
+            <a href="tel:8888400931"
+                class="font-heading font-black text-mcs-gold text-3xl tracking-widest mt-8 hover:text-white transition-colors">(888)
+                840-0931</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-mcs-black text-white py-32 border-b-4 border-mcs-gold">
+        <div class="max-w-7xl mx-auto px-6 grid-12">
+            <div class="col-span-12 lg:col-span-10 lg:col-start-2 text-center lg:text-left">
+                <span
+                    class="inline-block text-mcs-gold font-sans font-bold tracking-widest uppercase mb-6 text-sm">About
+                    Us</span>
+                <h1
+                    class="font-heading font-black text-6xl md:text-8xl lg:text-9xl uppercase tracking-tighter leading-none mb-8">
+                    The Foundation<br /> Of Excellence
+                </h1>
+                <p class="font-sans text-gray-400 text-xl md:text-2xl leading-relaxed max-w-3xl lg:mx-0 mx-auto">
+                    A Legacy of Field Expertise Powered by Modern Innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid-12">
+
+            <!-- Narrative Column (Left) -->
+            <div class="col-span-12 lg:col-span-7 pr-0 lg:pr-12 mb-16 lg:mb-0">
+                <h2 class="font-heading font-black text-4xl md:text-5xl uppercase tracking-tight text-mcs-black mb-10">
+                    Who We Are
+                </h2>
+
+                <div class="space-y-6 font-sans text-lg text-gray-600 leading-relaxed border-l-4 border-mcs-gold pl-6">
+                    <p>
+                        McCole Construction Services (MCS) represents a new standard of general contracting across the
+                        DMV. Born from a desire to strip away industry inefficiencies, we deliver complex commercial and
+                        residential projects with unmatched precision. We are not just managers; we are builders who
+                        understand the anatomy of a job site from the ground up.
+                    </p>
+                    <p>
+                        For decades, our leadership has honed boots-on-the-ground building experience, managing rigorous
+                        timelines and intricate scopes. Today, we fuse this hard-earned field knowledge with high-tech
+                        project management software and proactive, radically transparent client communication. The
+                        result is a unified force capable of executing your vision without the friction.
+                    </p>
+                    <p>
+                        Whether we are breaking ground on a cutting-edge corporate headquarters in McLean or executing a
+                        delicate historic renovation in Washington D.C., our approach remains identical: rigorous
+                        planning, relentless execution, and an unwavering commitment to the final product. We build it
+                        right, or we don't build it at all.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Philosophy Pillars Column (Right) -->
+            <div
+                class="col-span-12 lg:col-span-5 bg-gray-50 p-10 lg:p-12 border border-gray-100 shadow-sm relative overflow-hidden">
+                <!-- Decorative background accent -->
+                <svg class="absolute -right-16 -top-16 w-48 h-48 text-gray-200 opacity-50" fill="currentColor"
+                    viewBox="0 0 100 100">
+                    <rect x="0" y="0" width="100" height="100" transform="rotate(45 50 50)" />
+                </svg>
+
+                <h3
+                    class="font-heading font-black text-2xl uppercase tracking-widest text-mcs-black mb-10 relative z-10">
+                    Our Core Philosophy
+                </h3>
+
+                <ul class="space-y-10 relative z-10">
+                    <!-- Pillar 1 -->
+                    <li class="flex items-start">
+                        <span class="font-heading font-black text-3xl text-mcs-gold mr-6 mt-1 opacity-70">01</span>
+                        <div>
+                            <h4 class="font-heading font-bold text-xl uppercase tracking-wide text-mcs-black mb-2">
+                                Precision</h4>
+                            <p class="font-sans text-gray-500 text-base leading-relaxed">
+                                Exacting standards applied to every phase of construction. No detail is too small, no
+                                tolerance too tight. We measure twice and cut once, ensuring flawless execution.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- Pillar 2 -->
+                    <li class="flex items-start">
+                        <span class="font-heading font-black text-3xl text-mcs-gold mr-6 mt-1 opacity-70">02</span>
+                        <div>
+                            <h4 class="font-heading font-bold text-xl uppercase tracking-wide text-mcs-black mb-2">
+                                Integrity</h4>
+                            <p class="font-sans text-gray-500 text-base leading-relaxed">
+                                Transparent communication, honest pricing, and accountability at every step. We do what
+                                we say we are going to do, honoring our commitments to clients and trade partners alike.
+                            </p>
+                        </div>
+                    </li>
+
+                    <!-- Pillar 3 -->
+                    <li class="flex items-start">
+                        <span class="font-heading font-black text-3xl text-mcs-gold mr-6 mt-1 opacity-70">03</span>
+                        <div>
+                            <h4 class="font-heading font-bold text-xl uppercase tracking-wide text-mcs-black mb-2">
+                                Safety</h4>
+                            <p class="font-sans text-gray-500 text-base leading-relaxed">
+                                A non-negotiable culture of hazard prevention. We protect our crews, our clients, and
+                                our communities by upholding the strictest safety protocols on every single site.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How We Build Section -->
+    <section class="py-24 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-black text-4xl md:text-5xl uppercase tracking-tight text-mcs-black mb-4">
+                    How We Build
+                </h2>
+                <div class="w-24 h-1 bg-mcs-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Phase 1: Pre-Construction -->
+                <div
+                    class="bg-white p-10 border border-gray-200 hover:border-mcs-gold transition-colors duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-mcs-gray rounded-full flex items-center justify-center mb-8 group-hover:bg-mcs-gold transition-colors duration-300">
+                        <!-- Blueprint/Drafting SVG -->
+                        <svg class="w-8 h-8 text-mcs-gold group-hover:text-mcs-black transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <span
+                        class="font-heading font-black text-xs text-gray-400 uppercase tracking-widest block mb-2">Phase
+                        01</span>
+                    <h3 class="font-heading font-bold text-2xl uppercase tracking-wide text-mcs-black mb-4">
+                        Pre-Construction</h3>
+                    <p class="font-sans text-gray-600 leading-relaxed">
+                        Strategic planning, meticulous budgeting, and comprehensive site analysis. We resolve
+                        complexities on paper before a single shovel hits the dirt.
+                    </p>
+                </div>
+
+                <!-- Phase 2: Active Management -->
+                <div
+                    class="bg-white p-10 border border-gray-200 hover:border-mcs-gold transition-colors duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-mcs-gray rounded-full flex items-center justify-center mb-8 group-hover:bg-mcs-gold transition-colors duration-300">
+                        <!-- Chart/Management SVG -->
+                        <svg class="w-8 h-8 text-mcs-gold group-hover:text-mcs-black transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <span
+                        class="font-heading font-black text-xs text-gray-400 uppercase tracking-widest block mb-2">Phase
+                        02</span>
+                    <h3 class="font-heading font-bold text-2xl uppercase tracking-wide text-mcs-black mb-4">Active
+                        Management</h3>
+                    <p class="font-sans text-gray-600 leading-relaxed">
+                        Real-time digital reporting, rigorous scheduling, and relentless site oversight. You get total
+                        transparency into daily progress, without the headache.
+                    </p>
+                </div>
+
+                <!-- Phase 3: The Handover -->
+                <div
+                    class="bg-white p-10 border border-gray-200 hover:border-mcs-gold transition-colors duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-mcs-gray rounded-full flex items-center justify-center mb-8 group-hover:bg-mcs-gold transition-colors duration-300">
+                        <!-- Checkmark SVG -->
+                        <svg class="w-8 h-8 text-mcs-gold group-hover:text-mcs-black transition-colors duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <span
+                        class="font-heading font-black text-xs text-gray-400 uppercase tracking-widest block mb-2">Phase
+                        03</span>
+                    <h3 class="font-heading font-bold text-2xl uppercase tracking-wide text-mcs-black mb-4">The Handover
+                    </h3>
+                    <p class="font-sans text-gray-600 leading-relaxed">
+                        Flawless finishing, rigorous QA/QC quality checks, and comprehensive post-build support to
+                        ensure your space operates exactly as engineered.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="bg-mcs-gold text-mcs-black py-24 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-heading font-black text-5xl md:text-7xl uppercase tracking-tighter mb-10 leading-none">
+                Ready to Build Your Vision?
+            </h2>
+            <a href="index.html#consultationForm"
+                class="inline-block bg-mcs-black text-white font-heading font-black text-xl uppercase tracking-widest px-12 py-5 border-2 border-mcs-black hover:bg-transparent hover:text-mcs-black transition-colors duration-300">
+                Partner with MCS
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mcs-black py-24 border-t-4 border-mcs-gold">
+        <div class="max-w-7xl mx-auto px-6 grid-12">
+            <div class="col-span-12 lg:col-span-5 reveal">
+                <img src="assets/logo.png" alt="MCS Logo" class="h-16 w-auto mb-8 invert opacity-90">
+                <p
+                    class="font-sans text-gray-400 text-lg leading-relaxed mb-8 border-l-2 border-mcs-gold pl-4 max-w-sm">
+                    Building the future with precision, integrity, and relentless excellence. Your vision, engineered to
+                    reality.
+                </p>
+            </div>
+
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 reveal md:mt-0 mt-12">
+                <h4 class="font-heading font-black text-2xl uppercase tracking-wider text-white mb-6">Contact</h4>
+                <ul class="text-gray-400 font-sans space-y-4 text-lg">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-3 text-mcs-gold mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <span>7918 Jones Branch Dr<br />McLean, VA 22102</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-3 text-mcs-gold flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <a href="mailto:info@mccoleconstruction.com"
+                            class="hover:text-mcs-gold transition-colors">info@mccoleconstruction.com</a>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-3 text-mcs-gold flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg>
+                        <a href="tel:8888400931"
+                            class="font-bold text-white hover:text-mcs-gold transition-colors">(888) 840-0931</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div
+                class="col-span-12 md:col-span-6 lg:col-span-4 reveal md:mt-0 mt-12 flex flex-col items-start lg:items-end lg:justify-start">
+                <a href="index.html"
+                    class="group inline-flex items-center bg-transparent border-2 border-mcs-gold text-mcs-gold font-heading font-black uppercase tracking-widest px-8 py-5 hover:bg-mcs-gold hover:text-mcs-black transition-colors duration-300">
+                    Back to Homepage
+                    <svg class="w-5 h-5 ml-2 transform group-hover:-translate-x-1 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 mt-24 pt-8 border-t border-gray-900 text-center lg:text-left flex flex-col lg:flex-row justify-between items-center font-sans text-sm text-gray-600">
+            <p>&copy; 2026 McCole Construction Services. All rights reserved.</p>
+            <div class="mt-4 lg:mt-0 space-x-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Logic -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamburgerIcon = document.getElementById('hamburgerIcon');
+        let isMenuOpen = false;
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                isMenuOpen = !isMenuOpen;
+                if (isMenuOpen) {
+                    mobileMenu.classList.remove('hidden');
+                    // slight delay for opacity transition
+                    setTimeout(() => {
+                        mobileMenu.classList.remove('opacity-0');
+                        mobileMenu.classList.add('opacity-100');
+                    }, 10);
+                    // Change icon to X
+                    hamburgerIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                } else {
+                    mobileMenu.classList.remove('opacity-100');
+                    mobileMenu.classList.add('opacity-0');
+                    setTimeout(() => {
+                        mobileMenu.classList.add('hidden');
+                    }, 300);
+                    // Change icon back to hamburger
+                    hamburgerIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
